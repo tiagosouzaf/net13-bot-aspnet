@@ -10,7 +10,7 @@
             "id": "77595130-b112-11e8-ad78-7b616cd12d38",
             "appId": "",
             "appPassword": "",
-            "endpoint": "http://localhost:3030/api/messages"
+            "endpoint": "http://localhost:3978/api/messages"
         }
     ]
 }
