@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Microsoft.Bot.Connector;
+using SimpleBot.Data;
 
 namespace SimpleBot
 {
@@ -31,7 +32,7 @@ namespace SimpleBot
             string userFromName = activity.From.Name;
 
             var message = new Message(userFromId, userFromName, text);
-
+            new context().PostAsync(null);
             string response = SimpleBotUser.Reply(message);
 
             await ReplyUserAsync(activity, response);

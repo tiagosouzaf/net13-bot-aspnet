@@ -134,9 +134,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Data\context.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\Client.cs" />
     <Compile Include="Logic\Message.cs" />
     <Compile Include="Logic\SimpleBotUser.cs" />
     <Compile Include="Logic\UserProfile.cs" />
